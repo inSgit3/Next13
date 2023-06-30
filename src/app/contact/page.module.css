@@ -1,3 +1,66 @@
 .contact {
-    background-color: #999;
+    display: flex;
+    flex-direction: column;
 }
+
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    gap: 100px;
+    margin-top: 50px;
+}
+
+.contactContainer {
+   flex: 1;
+}
+
+.img {  
+    object-fit: contain;
+    animation: move 3s infinite ease alternate;
+}
+
+@keyframes move {
+    from {
+        transform: translateY(-15px); 
+    } to {
+        transform: translateY(0px) scale(1.03)
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.textInput, .emailInput, .textareaInput {
+    border: 3px solix #a4a3a8;
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+    color: #989898;
+    width: 500px;
+    font-size: 22px;
+    font-weight: 900;
+    padding-left: 20px;
+}
+
+.textInput, .emailInput {
+    height: 60px;
+}
+
+.textareaInput {
+    height: 200px;
+}
+
