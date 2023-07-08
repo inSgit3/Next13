@@ -1,0 +1,17 @@
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bigTitle {
+    font-size: 5rem;
+}
+.title {
+    font-size: 3rem;
+}

@@ -1,10 +1,15 @@
+
+
 .imgDiv {
-   background-color: rgb(65, 67, 67);
-   padding: 10px 10px 100px 10px;
-   margin: 20px;
-   border: transparent;
-   border-radius: 30px;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(65, 67, 67);
+    padding: 10px 10px 10px 10px;
+    margin: 20px;
+    border: transparent;
+    border-radius: 30px;
+ }
 
 .containerImgs {
     display: flex;
@@ -15,3 +20,43 @@
 .img {
     border-radius: 20px;
 }
+  
+.imgDiv:hover {
+opacity: 0.7;
+filter: hue-rotate(40deg); 
+}
+
+.icons {
+position: absolute;
+display: flex;
+justify-content: space-around;
+}
+
+.icon {
+margin: auto 10px auto 10px;
+border-radius: 15px;
+display: none; /* Hide icon by default */
+}
+
+.imgDiv:hover .icon {
+display: flex; /* Show icons when hovering over .imgDiv1 */
+background-color: rgb(255, 255, 255);
+}
+
+.icon:hover {
+box-shadow: 0 0 30px rgb(0, 255, 4);
+}
+
+.imgAndTitle {
+    display: flex;
+    flex-direction: column;
+}
+
+.links {
+    font-size: large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+
+  

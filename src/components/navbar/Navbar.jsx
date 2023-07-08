@@ -1,8 +1,8 @@
 'use client'
-import React from 'react'
 import Link from 'next/link'
 import styles from './navbar.module.css'
 import Button from '../Button/Button'
+import DarkModeSwitch from '../DarkModeSwitch/DarkModeSwitch'
 
 const links = [
   {
@@ -41,6 +41,7 @@ const Navbar = () => {
   return (
     <div className={styles.container}>
       <Link href="/" className={styles.logo}>NextHOME</Link>
+      <DarkModeSwitch/>
       <div className={styles.links}>
         {links.map((link => (
           <Link key={link.id} href={link.url} className={styles.link}>{link.title}</Link>
