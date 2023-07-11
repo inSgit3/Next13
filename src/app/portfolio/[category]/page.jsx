@@ -2,16 +2,28 @@ import Image from 'next/image'
 import styles from './page.module.css'
 import project from '@/utilities/project.png'
 import Button from '@/components/Button/Button'
+import {items} from './data.js'
+import { notFound } from 'next/navigation'
+
+const getData = (catg) => {
+    const data = items[catg]
+
+    if (data) {
+        return data
+    }
+
+    return notFound()
+}
 
 const Category = ({params}) => {
-
+    const data = getData(params.category)
     return (
     <div className={styles.container}>
        <div>
         <h1 className={styles.bigTitle}>
             Our Works
         </h1>
-        <br/>
+        {data.map((item) => )}
         <p >
             Illustrations
         </p>
