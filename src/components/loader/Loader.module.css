@@ -1,0 +1,7 @@
+.loadingGif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 35%;
+}

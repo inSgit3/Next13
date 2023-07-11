@@ -1,9 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
+import loader from '@/utilities/load.gif';
+import styles from './Loader.module.css'
 
 const Loader = () => {
   return (
-    <Image src="/src/utilities/load.gif" alt='loading gif' width={606} height={606}/>
+    <Image src={loader} alt='loading gif' width={300} height={300} className={styles.loadingGif}/>
   );
 };
 

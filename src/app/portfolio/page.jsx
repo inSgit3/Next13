@@ -10,7 +10,6 @@ import Link from 'next/link'
 const Portfolio = () => {
 
 
-
   return (
     <div className={styles.container}>
         <h1>Here you can see our portfolios</h1>

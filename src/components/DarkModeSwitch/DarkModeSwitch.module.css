@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(159, 158, 157);
+    height: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.mode {
+    position: relative;
+    font-size: 14px;
+    margin: auto 3px;
+    padding: 5px;
+}
+
+.dayOn {
+    position: absolute;
+    background-color: rgb(79, 207, 99);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-left: 7px;
+    margin-top: 5px;
+
+}
+
+.dayOff {
+    position: absolute;
+    background-color: rgb(79, 207, 99);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-left: 34px;
+    margin-top: 5px;
+}
+

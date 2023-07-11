@@ -1,3 +1,29 @@
 .container {
-    background-color: #999;
+    background-color: rgba(85, 52, 192, 0.1);
+    border-radius: 15px;
+}
+
+.posts {
+    text-align: left;
+    padding: 15px;
+    margin: 10px;
+}
+
+.headings {
+    padding: 15px auto;
+    margin: 15px auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.imgAndHeading {
+    display: flex;
+    flex-direction: row;
+}
+
+.paragraphs {
+    padding: 15px auto;
 }
