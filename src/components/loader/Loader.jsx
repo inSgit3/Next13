@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import loader from '@/utilities/load.gif';
+import loader from '@/utilities/images/load.gif';
 import styles from './Loader.module.css'
 
 const Loader = () => {

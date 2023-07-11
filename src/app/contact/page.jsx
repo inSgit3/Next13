@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './page.module.css'
 import Image from 'next/image'
-import contactImg from '@/utilities/contact.png'
+import contactImg from '@/utilities/images/contact.png'
 import Button from '@/components/Button/Button'
 
 const Contact = () => {

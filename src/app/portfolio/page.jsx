@@ -1,9 +1,9 @@
 'use client'
 import styles from './page.module.css'
-import project from '@/utilities/project.png'
+import project from '@/utilities/images/project.png'
 import Image from 'next/image'
-import githubIcon from '@/utilities/githubIcon.svg'
-import viewIcon from '@/utilities/viewIcon.png'
+import githubIcon from '@/utilities/images/githubIcon.svg'
+import viewIcon from '@/utilities/images/viewIcon.png'
 import Link from 'next/link'
 
 

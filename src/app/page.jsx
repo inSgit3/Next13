@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import home from '@/utilities/home.png'
+import home from '@/utilities/images/home.png'
 import Button from '@/components/Button/Button'
 
 

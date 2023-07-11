@@ -2,10 +2,10 @@
 import React from 'react'
 import styles from './footer.module.css'
 import Image from 'next/image'
-import facebook from '../../utilities/f.png'
-import insta from '../../utilities/i.png'
-import twitter from '../../utilities/t.png'
-import youtube from '../../utilities/y.png'
+import facebook from '@/utilities/images/f.png'
+import insta from '@/utilities/images/i.png'
+import twitter from '@/utilities/images/t.png'
+import youtube from '@/utilities/images/y.png'
 
 const Footer = () => {
   return (
