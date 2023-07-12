@@ -4,6 +4,11 @@ import Image from 'next/image'
 import contactImg from '@/utilities/images/contact.png'
 import Button from '@/components/Button/Button'
 
+export const metadata = {
+  title: "Contact with Abdurashid",
+  description: 'this is contact page with Abdurashid, you can ask questions, tell your feedbacks',
+}
+
 const Contact = () => {
   return (
     <div className={styles.contact}>

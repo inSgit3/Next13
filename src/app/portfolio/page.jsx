@@ -6,7 +6,6 @@ import githubIcon from '@/utilities/images/githubIcon.svg'
 import viewIcon from '@/utilities/images/viewIcon.png'
 import Link from 'next/link'
 
-
 const Portfolio = () => {
 
 

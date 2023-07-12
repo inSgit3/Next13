@@ -4,7 +4,9 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 
 async function getData(id) {
-  const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {cache: 'no-store',});
+  const res = await fetch(`http://localhost:3000/api/posts/${id}`, {
+    cache: "no-store",
+  });
 
   if (!res.ok) {
     return notFound()
@@ -35,7 +37,7 @@ const BlogPost = async ({ params }) => {
           </p>
           <div className={styles.author}>
             <Image
-              src="https://cdn.pixabay.com/photo/2018/05/03/14/10/united-3371433_1280.jpg"
+              src={data.img}
               alt=""
               width={40}
               height={40}
@@ -46,7 +48,7 @@ const BlogPost = async ({ params }) => {
         </div>
         <div className={styles.imageContainer}>
           <Image
-            src="https://cdn.pixabay.com/photo/2018/05/03/14/10/united-3371433_1280.jpg"
+            src={data.img}
             alt=""
             fill={true}
             className={styles.image}
@@ -55,7 +57,7 @@ const BlogPost = async ({ params }) => {
       </div>
       <div className={styles.content}>
         <p className={styles.text}>
-         {data.body}
+         {data.content}
         </p>
       </div>
     </div>

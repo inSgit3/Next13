@@ -1,13 +1,21 @@
 import Link from 'next/link'
 import styles from './Button.module.css'
 
-const Button = ({url, text}) => {
+const Button = ({url, text, onClick}) => {
   return (
-     <Link href={url}>
-     <button className={styles.button}>
-      {text}
-    </button>
-    </Link>
+     <>
+     {url ? (
+        <Link href={url}>
+          <button className={styles.button} onClick={onClick}>
+            {text}
+          </button>
+        </Link>
+      ) : (
+        <button className={styles.button} onClick={onClick}>
+          {text}
+        </button>
+      )}
+       </>
   )
 }
 

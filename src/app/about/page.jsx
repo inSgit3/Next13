@@ -4,6 +4,11 @@ import Image from 'next/image'
 import aboutImg from '@/utilities/images/about.jpg'
 import Button from '@/components/Button/Button'
 
+export const metadata = {
+  title: "About Abdurashid",
+  description: 'About Abdurashid, his story of life, the path for becoming web developer and biography',
+}
+
 
 const about = () => {
   return (

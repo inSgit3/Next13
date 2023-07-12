@@ -1,35 +1,26 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
-const userSchema = new mongoose.Schema({
-  firstName: {
-    type: String,
-    required: [true, 'Please enter your first name.'],
-    trim: true,
-  },
-  lastName: {
-    type: String,
-    required: [true, 'Please enter your last name.'],
-    trim: true,
-  },
-  email: {
-    type: String,
-    required: [true, 'Please enter your email.'],
-    unique: true,
-    lowercase: true,
-    trim: true,
-  },
-  password: {
-    type: String,
-    required: [true, 'Please enter a password.'],
-    minlength: [6, 'Password should be at least 6 characters.'],
-    trim: true,
-  },
-  createdAt: {
-    type: Date,
-    default: Date.now,
-  },
-});
+const { Schema } = mongoose;
 
-const User = mongoose.model('User', userSchema);
+const userSchema = new Schema(
+  {
+    name: {
+      type: String,
+      unique: true,
+      required: true,
+    },
+    email: {
+      type: String,
+      unique: true,
+      required: true,
+    },
+    password: {
+      type: String,
+      required: true,
+    },
+  },
+  { timestamps: true }
+);
 
-export default User; 
+//If the User collection does not exist create a new one.
+export default mongoose.models.User || mongoose.model("User", userSchema);
