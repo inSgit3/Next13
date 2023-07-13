@@ -8,9 +8,8 @@ export default function Home() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.item}>
-        <h1 className={styles.title}>Better design for your digital products</h1>
-        <p className={styles.desc}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit repellat, dolore dolorem rem excepturi ex recusandae est quis sint mollitia iste sit minima.
-        Quibusdam, sed!
+        <h1 className={styles.title}>Better framework for your web applications</h1>
+        <p className={styles.desc}>This project was done in order to learn and test the NextJs framework. In particular, things like NextJs App router, SEO, Authorization, and even back-end have been used. So far it seems really cool.
         </p>
         <Button url='/portfolio' text='Go to portfolio' className={styles.btn}/>
       </div>

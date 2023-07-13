@@ -8,7 +8,9 @@
 .logo {
     font-size: 22px;
     font-weight: 700;
-    color: #cbecbb;
+    color: rgb(255, 255, 255);
+    padding: 7px;
+    background-color: rgba(85, 52, 192, 0.7);;
 }
 
 .links {

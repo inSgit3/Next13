@@ -6,6 +6,7 @@ import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Button from "@/components/Button/Button";
+import Link from "next/link";
 
 const Dashboard = () => {
   const session = useSession();
@@ -83,6 +84,7 @@ const Dashboard = () => {
                   </span>
                 </div>
               ))}
+              <h3>When you add posts, they appear in here and in <Link href='/blog' className={styles.blogLink}>Blog</Link> page</h3>
         </div>
         <form className={styles.new} onSubmit={handleSubmit}>
           <h1>Add New Post</h1>

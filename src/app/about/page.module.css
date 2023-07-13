@@ -37,7 +37,7 @@
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background-color: #baa9f4;
+    background-color: rgba(85, 52, 192, 0.7);
     padding: 5px;
     color: #fff;
 }
