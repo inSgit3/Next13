@@ -17,4 +17,5 @@
 .icon {
     opacity: 0.6;
     cursor: pointer;
+    margin-left: 5px;
 }

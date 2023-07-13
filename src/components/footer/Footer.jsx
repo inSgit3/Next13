@@ -2,22 +2,30 @@
 import React from 'react'
 import styles from './footer.module.css'
 import Image from 'next/image'
-import facebook from '@/utilities/images/f.png'
+import LinkedIn from '@/utilities/images/l.png'
 import insta from '@/utilities/images/i.png'
 import twitter from '@/utilities/images/t.png'
-import youtube from '@/utilities/images/y.png'
+import github from '@/utilities/images/g.png'
 
 const Footer = () => {
   return (
     <div className={styles.container}>
      <div >
-     Next.js 13 Tutorial
+     Abdurashid&apos;s NextJS full stack project
      </div>
      <div className={styles.social}>
-     <Image src={facebook} alt="Facebook Logo" width={48} height={48} className={styles.icon}/>
-     <Image src={insta} alt="Facebook Logo" width={48} height={48} className={styles.icon}/>
-     <Image src={twitter} alt="Facebook Logo" width={48} height={48} className={styles.icon}/>
-     <Image src={youtube} alt="Facebook Logo" width={48} height={48} className={styles.icon}/>
+      <a href="https://linkedin.com/in/abdurashid-akbarov">
+     <Image src={LinkedIn} alt="LinkedIn Logo" width={35} height={35} className={styles.icon}/>
+     </a>
+     <a href="https://instagram.com/abdurshd">
+     <Image src={insta} alt="Instagram Logo" width={24} height={24} className={styles.icon}/>
+     </a>
+     <a href="https://twitter.com/abdurshd">
+     <Image src={twitter} alt="Twitter Logo" width={24} height={24} className={styles.icon}/>
+     </a>
+     <a href="https://github.com/inSgit3">
+     <Image src={github} alt="Github Logo" width={24} height={24} className={styles.icon}/>
+     </a>
      </div>
     </div>
   )

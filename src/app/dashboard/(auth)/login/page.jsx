@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 import { getProviders, signIn, useSession } from "next-auth/react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
+import Button from "@/components/Button/Button";
 
 const Login = ({ url }) => {
   const session = useSession();
@@ -54,29 +55,13 @@ const Login = ({ url }) => {
           required
           className={styles.input}
         />
-        <button className={styles.button}>Login</button>
+        <Button text='Login'/>
         {error && error}
       </form>
-      <button
-        onClick={() => {
-          signIn("google");
-        }}
-        className={styles.button + " " + styles.google}
-      >
-        Login with Google
-      </button>
+      <Button text='Login with Google' onClick={() => {signIn("google")}}/>
       <span className={styles.or}>- OR -</span>
-      <Link className={styles.link} href="/dashboard/register">
-        Create new account
-      </Link>
-      {/* <button
-        onClick={() => {
-          signIn("github");
-        }}
-        className={styles.button + " " + styles.github}
-      >
-        Login with Github
-      </button> */}
+      <Button text='Create new account' url="/dashboard/register"/>
+
     </div>
   );
 };
