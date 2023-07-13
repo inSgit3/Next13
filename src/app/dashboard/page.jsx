@@ -101,7 +101,7 @@ const Dashboard = () => {
         </form>
       </div>
     );
-  }
+  };
 };
 
 export default Dashboard;
