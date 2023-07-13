@@ -12,12 +12,12 @@ const DarkModeSwitch = () => {
             modeToggle ? '#111' : '#fff'
           );
     }
+    const day = <div className={styles.mode}>🔆 </div>
+    const night = <div className={styles.mode}>🌙</div>
 
   return (
     <div className={styles.container} onClick={handleClick}>
-      <div className={styles.mode}>🔆 </div>
-      <div className={styles.mode}>🌙</div>
-      <div className={modeToggle ? styles.dayOn : styles.dayOff}></div>
+      {modeToggle? day : night}
     </div>
   )
 }
