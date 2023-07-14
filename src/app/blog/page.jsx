@@ -27,7 +27,7 @@ const Blog = () => {
     };
 
     fetchData();
-  }, []);
+  }, []); 
 
   return (
     <div className={styles.mainContainer}>
