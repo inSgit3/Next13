@@ -40,6 +40,7 @@ const Blog = () => {
               width={400}
               height={250}
               className={styles.image}
+              priority
             />
           </div>
           <div className={styles.content}>

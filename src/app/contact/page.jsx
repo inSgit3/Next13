@@ -6,7 +6,7 @@ import Button from '@/components/Button/Button'
 import {toast} from 'react-toastify'
 
 const Contact = () => {
-  const notify = () => toast("I am working on intergrating emailing system. Until i finish that please use my social network accounts for contacting me. Thank you!");
+  const notify = () => toast("I am working on intergrating emailing system. Until i finish that please use my social network accounts in the bottom-right for contacting me. Thank you!");
 
   return (
     <div className={styles.contact}>
@@ -15,7 +15,7 @@ const Contact = () => {
       </div>
       <div className={styles.content}>
         <div className={styles.imgContainer}>
-          <Image src={contactImg} alt="contact pic"  className={styles.img} width={500} height={500}/>
+          <Image src={contactImg} alt="contact pic"  className={styles.img} width={500} height={500} priority/>
         </div>
         <div className={styles.formContainer}>
           <form className={styles.form} >

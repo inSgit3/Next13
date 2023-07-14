@@ -14,7 +14,7 @@ export default function Home() {
         <Button url='/blog' text='Go to Blogs' className={styles.btn}/>
       </div>
 <div className={styles.item}>
-  <Image src={home} alt="illustration Logo"  className={styles.img} />
+  <Image src={home} alt="illustration Logo"  className={styles.img} priority/>
 </div>
 </div>
   )

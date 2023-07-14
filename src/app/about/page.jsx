@@ -14,7 +14,7 @@ const about = () => {
   return (
     <div className={styles.container}>
       <div className={styles.imgContainer}>
-        <Image src={aboutImg} alt="about" fill={true} className={styles.img}/>
+        <Image src={aboutImg} alt="about" fill={true} className={styles.img} priority/>
         <div className={styles.imgText}>
           <h1 className={styles.imgTitle}>About project</h1>
           <h2 className={styles.imgDesc}> It is really satisfying project with delightful use of NextJs </h2> 
