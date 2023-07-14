@@ -45,25 +45,11 @@
 }
 
 .textInput, .emailInput, .textareaInput {
-    border: 3px solix #a4a3a8;
-    border-radius: 5px;
-    outline: none;
+    padding: 10px;
     background-color: transparent;
-    color: #989898;
-    width: 500px;
-    font-size: 22px;
-    font-weight: 900;
-    padding-left: 20px;
-}
-
-.textInput, .emailInput {
-    height: 60px;
-}
-
-.textareaInput {
-    height: 200px;
-}
-
-.btn {
-    color: yellow;
+    border: 2px solid #bbb;
+    border-radius: 3px;
+    color: #bbb;
+    font-size: 20px;
+    font-weight: bold;
 }
